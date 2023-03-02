@@ -1,8 +1,30 @@
+.menuBody {
+    width: 80%;
+    margin: 0 auto;
+}
+.menu-icons {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.menu-icons i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .list-menu-active {
-    background-color: red;
     list-style: none;
 }
 .list-menu {
+    opacity: 0;
     list-style: none;
     background-color: white;
+}
+.listItem {
+    display: flex;
+    justify-content: space-around;
+    background-color: blueviolet;
+    height: 6vh;
+    width: 100%;
+
 }

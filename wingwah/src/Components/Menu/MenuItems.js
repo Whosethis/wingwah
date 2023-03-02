@@ -59,7 +59,7 @@ export const Appetizers = [
     {
         cName : "listItem",
         indexNumber : 107,
-        itemName :'Crab Rangoons (6)',
+        itemName :'Combo Tray',
         price : 11.95
     },
 ]

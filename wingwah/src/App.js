@@ -7,7 +7,6 @@ import MenuRoute from './Routes/MenuRoute';
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
       <Navbar />
       <Routes>
         <Route path="/" element={<AboutRoute />}/>

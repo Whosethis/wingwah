@@ -17,16 +17,15 @@ class Menu extends Component {
                 <h1>Menu</h1>
 
                 {/* Body of Menu */}
-                <div className='menuBody'>
-
-                    {/* Title for Section */}
-                    <h2 className='menuSections'>Appetizers (Aperotovss)</h2> 
+                <div className='menuBody'>  
                     {/* Inseert Toggle Icons along with toggle function */}
                 <div className="menu-icons" onClick={this.handleClick}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Appetizers (Aperotovss)</h2> 
                     <i className={this.state.clicked ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
                 </div>
                     {/* Function to toggle dropdown by changing UL class on click */}
-                    <ul className={this.state.clicked ? "list-menu-active" : "list-menu"}>      
+                    <ul className={this.state.clicked ? "list-menu" : "list-menu-active"}>      
                         {Appetizers.map((item, index) => {
                             return (
                                 <li key={index}>
