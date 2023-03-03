@@ -43,6 +43,30 @@ class Menu extends Component {
                             )
                         })}
                     </ul>
+                    <div className="menu-icons" onClick={this.handleClick}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Appetizers (Aperotovss)</h2> 
+                    <i className={this.state.clicked ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clicked ? "list-menu" : "list-menu-active"}>      
+                        {Appetizers.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.price}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
                 </div>
             </div>
         )
