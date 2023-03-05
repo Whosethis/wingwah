@@ -3,14 +3,15 @@ export const Appetizers = [
         cName : "listItem",
         indexNumber : 100,
         itemName :'Vegetable Egg Rolls (2)',
-        smallPrice : 3.95
+        smallPrice : 2.45
     },
 
     {
         cName : "listItem",
         indexNumber : 101,
         itemName :'Egg Rolls',
-        smallPrice : 3.95
+        smallPrice : 2.45,
+        largePrice : 3.95
     },
 
     {
@@ -703,5 +704,669 @@ export const SS = [
         itemName :'Pineapple Chicken',
         smallPrice : 8.25,
         largePrice : 10.95
+    },
+]
+
+export const Beef = [
+    {
+        cName : "listItem",
+        indexNumber : 451,
+        itemName :'Beef Kow',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 452,
+        itemName :'Beef Broccoli',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 453,
+        itemName :'Beef Almond Ding',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 454,
+        itemName :'Beef Tomato Pepper',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 455,
+        itemName :'Beef Garlic Sauce',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 456,
+        itemName :'Peper Steak',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 457,
+        itemName :'Beef Peapods',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 458,
+        itemName :'Beef Cashew',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 459,
+        itemName :'Beef With Oyster Sauce',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 460,
+        itemName :'Ginger Green Onion Beef',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 461,
+        itemName :'Beef with Rice',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 462,
+        itemName :'Hunan Beef(Hot)',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 463,
+        itemName :'Beef Curry(Hot)',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 464,
+        itemName :'KungBao Beef(Hot)',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 465,
+        itemName :'Szechwan Beef(Hot)',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 466,
+        itemName :'Mongolian Beef(Hot)',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+]
+
+export const Pork =[
+    {
+        cName : "listItem",
+        indexNumber : 501,
+        itemName :'B.B.Q Pork Kow',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 502,
+        itemName :'B.B.Q Pork Broccoli',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 503,
+        itemName :'B.B.Q Pork Almond Ding',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 504,
+        itemName :'Hong Sue Pork',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 505,
+        itemName :'B.B.Q Pork Peapods',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+]
+
+export const Chop = [
+    {
+        cName : "listItem",
+        indexNumber : 551,
+        itemName :'Wing Wah',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 552,
+        itemName :'Shrimp',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 553,
+        itemName :'Beef',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 554,
+        itemName :'Chicken',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 555,
+        itemName :'Pork',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 556,
+        itemName :'Vegetables',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 557,
+        itemName :'Wing Wah Subgum',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 558,
+        itemName :'Shrimp Subgum',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 559,
+        itemName :'Beef Subgum',
+        smallPrice : 8.65,
+        largePrice : 12.25
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 560,
+        itemName :'Chicken Subgum',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 561,
+        itemName :'Pork Subgum',
+        smallPrice : 8.35,
+        largePrice : 11.65
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 562,
+        itemName :'Vegetables Subgum',
+        smallPrice : 8.25,
+        largePrice : 11.35
+    },
+]
+
+export const WarMein = [
+    {
+        cName : "listItem",
+        indexNumber : 601,
+        itemName :'Wing Wah',
+        smallPrice : 12.65,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 602,
+        itemName :'Shrimp',
+        smallPrice : 12.65,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 603,
+        itemName :'Beef',
+        smallPrice : 12.65,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 604,
+        itemName :'Chicken',
+        smallPrice : 12.25,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 605,
+        itemName :'Pork',
+        smallPrice : 12.25,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 606,
+        itemName :'Vegetable(No Meat)',
+        smallPrice : 11.65,
+    },
+]
+
+export const LoMein = [
+    {
+        cName : "listItem",
+        indexNumber : 651,
+        itemName :'Wing Wah',
+        smallPrice : 12.65,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 652,
+        itemName :'Shrimp',
+        smallPrice : 12.65,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 653,
+        itemName :'Beef',
+        smallPrice : 12.65,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 654,
+        itemName :'Chicken',
+        smallPrice : 12.25,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 655,
+        itemName :'B.B.Q Pork',
+        smallPrice : 12.25,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 656,
+        itemName :'Vegetable(No Meat)',
+        smallPrice : 11.65,
+    },
+]
+
+export const Party =[
+    {
+        cName : "listItem",
+        indexNumber : 801,
+        itemName :'Egg Rolls(10)',
+        smallPrice : 15.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 802,
+        itemName :'Fried Rice',
+        smallPrice : 32.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 803,
+        itemName :'Chicken Entree',
+        smallPrice : 38.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 804,
+        itemName :'Beef Entree',
+        smallPrice : 43.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 805,
+        itemName :'Orange Chicken(Hot)',
+        smallPrice : 45.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 806,
+        itemName :'General Tso Chicken(Hot)',
+        smallPrice : 45.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 807,
+        itemName :'Shrimp Entree',
+        smallPrice : 43.00,
+    },
+]
+
+export const Diet = [
+    {
+        cName : "listItem",
+        indexNumber : 850,
+        itemName :'Broccoli w/ Onion & Oyster Sauce',
+        smallPrice : 8.15,
+        largePrice : 11.35,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 851,
+        itemName :'Peapods & Water Chestnuts',
+        smallPrice : 8.15,
+        largePrice : 11.35,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 852,
+        itemName :'Kung Bao Vegetables(Hot)',
+        smallPrice : 8.15,
+        largePrice : 11.35,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 853,
+        itemName :'Hunan Vegetables(Hot)',
+        smallPrice : 8.15,
+        largePrice : 11.35,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 854,
+        itemName :'Szechuan Vegetables(Hot)',
+        smallPrice : 8.15,
+        largePrice : 11.35,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 855,
+        itemName :'Vegetables w. Black Bean Garlic Sauce',
+        smallPrice : 8.15,
+        largePrice : 11.35,
+    },
+]
+
+export const Miscellaneous = [
+    {
+        cName : "listItem",
+        indexNumber : 701,
+        itemName :'Extra Shrimp',
+        smallPrice : 5.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 702,
+        itemName :'Extra Beef or Chicken or Pork',
+        smallPrice : 5.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 703,
+        itemName :'Extra Vegetables',
+        smallPrice : 3.50,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 704,
+        itemName :'Extra Steam Rice',
+        smallPrice : 2.50,
+        largePrice : 4.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 705,
+        itemName :'Fried Noodle',
+        smallPrice : 2.50,
+        largePrice : 4.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 706,
+        itemName :'Pan Fried Noodles',
+        smallPrice : 4.00,
+        largePrice : 6.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 707,
+        itemName :'Almond Cookies',
+        smallPrice : 2.00,
+        largePrice : 4.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 708,
+        itemName :'Fortune Cookies',
+        smallPrice : 2.00,
+        largePrice : 4.00,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 709,
+        itemName :'Pop',
+        smallPrice : 1.50,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 710,
+        itemName :'Hot Sauce',
+        smallPrice : 0.50,
+    },
+]
+
+export const Lunch = [
+    {
+        cName : "listItem",
+        indexNumber : 1,
+        itemName :'Beef or Chicken Chop Suey',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 2,
+        itemName :'Beef or Chicken Kow',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 3,
+        itemName :'Beef or Chicken Broccoli',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 4,
+        itemName :'Beef or Chicken with Green Pepper',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 5,
+        itemName :'Sweet and Sour Chicken or Pork',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 6,
+        itemName :'Vegetables Delight',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 7,
+        itemName :'Beef or Chicken Almond',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 8,
+        itemName :'Shrimp Egg Foo Yonung',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 9,
+        itemName :'Shrimp Kow',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 10,
+        itemName :'Shrimp Chop Suey',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 11,
+        itemName :'Chicken and Cashew',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 12,
+        itemName :'Seasme Chicken(Hot)',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 13,
+        itemName :'Orange Chicken(Hot)',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 14,
+        itemName :'General Tso Chicken(Hot)',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 15,
+        itemName :'Mongolian Beef or Chicken(Hot)',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 16,
+        itemName :'Szechwan Chicken or Beef(Hot)',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 17,
+        itemName :'Kung Bao Chicken or Beef',
+        smallPrice : 8.95,
+    },
+
+    {
+        cName : "listItem",
+        indexNumber : 18,
+        itemName :'Hunan Chicken or Beef',
+        smallPrice : 8.95,
     },
 ]

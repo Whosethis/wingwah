@@ -1,6 +1,6 @@
 import React from 'react';
 import './Menu.css';
-import { Appetizers, Soups, friedRice, Efg, Shrimp, Special, Chicken, SS } from './MenuItems';
+import { Appetizers, Soups, friedRice, Efg, Shrimp, Special, Chicken, SS, Beef, Pork, Chop, WarMein,LoMein, Party, Diet, Miscellaneous, Lunch } from './MenuItems';
 import { Component } from 'react';
 
 class Menu extends Component {
@@ -14,6 +14,15 @@ class Menu extends Component {
         clickedSpecial: true,
         clickedChicken: true,
         clickedSS: true,
+        clickedBeef: true,
+        clickedPork: true,
+        clickedChop: true,
+        clickedWarMein: true,
+        clickedLoMein: true,
+        clickedParty: true,
+        clickedDiet: true,
+        clickedMiscellaneous: true,
+        clickedLunch: true
      };
     handleClickAppetizers = () => {
         this.setState({ clickedAppetizers: !this.state.clickedAppetizers }) 
@@ -47,6 +56,42 @@ class Menu extends Component {
     handleClickSS = () => {
         this.setState({ clickedSS: !this.state.clickedSS }) 
     }
+
+    handleClickBeef = () => {
+        this.setState({ clickedBeef: !this.state.clickedBeef }) 
+    }
+
+    handleClickPork = () => {
+        this.setState({ clickedPork: !this.state.clickedPork }) 
+    }
+
+    handleClickChop = () => {
+        this.setState({ clickedChop: !this.state.clickedChop }) 
+    }
+
+    handleClickWarMein = () => {
+        this.setState({ clickedWarMein: !this.state.clickedWarMein }) 
+    }
+
+    handleClickLoMein = () => {
+        this.setState({ clickedLoMein: !this.state.clickedLoMein }) 
+    }
+
+    handleClickParty = () => {
+        this.setState({ clickedParty: !this.state.clickedParty }) 
+    }
+
+    handleClickDiet = () => {
+        this.setState({ clickedDiet: !this.state.clickedDiet }) 
+    }
+
+    handleClickMiscellaneous = () => {
+        this.setState({ clickedMiscellaneous: !this.state.clickedMiscellaneous }) 
+    }
+
+    handleClickLunch = () => {
+        this.setState({ clickedLunch: !this.state.clickedLunch }) 
+    }
     render() {
         return (
             /* Everything Starts Here */
@@ -74,7 +119,8 @@ class Menu extends Component {
 
                                         {/* Name of food */}
                                         <h4 className="MenuItem">{item.itemName}</h4>
-                                        <p className="Price">{item.price}</p>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
                                     </div>
                                 </li>
                             )
@@ -237,6 +283,7 @@ class Menu extends Component {
                                         {/* Name of food */}
                                         <h4 className="MenuItem">{item.itemName}</h4>
                                         <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
                                     </div>
                                 </li>
                             )
@@ -263,6 +310,247 @@ class Menu extends Component {
                                         {/* Name of food */}
                                         <h4 className="MenuItem">{item.itemName}</h4>
                                         <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+
+                <div className="menu-icons" onClick={this.handleClickBeef}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Beef(Carne de Res)</h2> 
+                    <i className={this.state.clickedBeef ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clickedBeef ? "list-menu" : "list-menu-active"}>      
+                        {Beef.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+
+                    <div className="menu-icons" onClick={this.handleClickPork}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Pork(Cerdo)</h2> 
+                    <i className={this.state.clickedPork ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clickedPork ? "list-menu" : "list-menu-active"}>      
+                        {Pork.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+
+                <div className="menu-icons" onClick={this.handleClickChop}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Chop Suey or Chow Mein</h2> 
+                    <i className={this.state.clickedChop ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clickedChop ? "list-menu" : "list-menu-active"}>      
+                        {Chop.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+
+                <div className="menu-icons" onClick={this.handleClickWarMein}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>War Mein</h2> 
+                    <i className={this.state.clickedWarMein ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clickedWarMein ? "list-menu" : "list-menu-active"}>      
+                        {WarMein.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+
+                <div className="menu-icons" onClick={this.handleClickLoMein}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Lo Mein</h2> 
+                    <i className={this.state.clickedLoMein ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clickedLoMein ? "list-menu" : "list-menu-active"}>      
+                        {LoMein.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+
+                <div className="menu-icons" onClick={this.handleClickParty}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Party Tray</h2> 
+                    <i className={this.state.clickedParty ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clickedParty ? "list-menu" : "list-menu-active"}>      
+                        {Party.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+                <div className="menu-icons" onClick={this.handleClickDiet}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Diet Dishes</h2> 
+                    <i className={this.state.clickedDiet ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clickedDiet ? "list-menu" : "list-menu-active"}>      
+                        {Diet.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+                <div className="menu-icons" onClick={this.handleClickMiscellaneous}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Miscellaneous</h2> 
+                    <i className={this.state.clickedMiscellaneous ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clickedMiscellaneous ? "list-menu" : "list-menu-active"}>      
+                        {Miscellaneous.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
+                                    </div>
+                                </li>
+                            )
+                        })}
+                    </ul>
+
+                <div className="menu-icons" onClick={this.handleClickLunch}>
+                    {/* Title for Section */}
+                    <h2 className='menuSections'>Lunch</h2> 
+                    <i className={this.state.clickedLunch ? "fa-solid fa-arrow-right" : "fa-solid fa-arrow-down"}></i> 
+                </div>
+                    {/* Function to toggle dropdown by changing UL class on click */}
+                    <ul className={this.state.clickedLunch ? "list-menu" : "list-menu-active"}>      
+                        {Lunch.map((item, index) => {
+                            return (
+                                <li key={index}>
+                                    {/* Class name for listitems under section */}
+                                    <div className={item.cName}>
+
+                                        {/* Number for the item on menu */}
+                                        <p className="Number">{item.indexNumber}</p>
+
+                                        {/* Name of food */}
+                                        <h4 className="MenuItem">{item.itemName}</h4>
+                                        <p className="Price">{item.smallPrice}</p>
+                                        <p className="Price">{item.largePrice}</p>
                                     </div>
                                 </li>
                             )
