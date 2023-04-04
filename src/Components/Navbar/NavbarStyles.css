@@ -1,0 +1,101 @@
+*,
+*:before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.NavbarItems {
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+.nav-logo {
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: auto;
+}
+.NavMenu {
+    list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.NavMenu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.NavMenu li a {
+    position: relative;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+.NavMenu li a:after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.NavMenu li a:hover {
+    color: grey;
+}
+.NavMenu li a:hover:after {
+    width: 100%;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+@media(max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active.bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active.bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active.bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .NavMenu {
+        position:fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .NavMenu.active {
+        left: 0;
+    }
+}

@@ -1,0 +1,84 @@
+.container {
+  text-align: center;
+}
+.menuBody {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .menu-icons {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: gold;
+    padding: 0 50px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+  .menu-icons:hover {background-color: goldenrod}
+
+  .menu-icons:active {
+  background-color: gold;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+
+  .menu-icons i {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .list-menu-active {
+    list-style: none;
+    background-color: white;
+    padding: 10px 30px;
+  }
+  
+  .list-menu {
+    display: none;
+  }
+  
+  .listItem {
+    display: flex;
+    justify-content: space-around;
+    background-color: blueviolet;
+    height: 6vh;
+    width: 100%;
+    border: 1px solid;
+    padding: 7px;
+    box-shadow: 5px 10px #888888;
+  }
+
+  .Price {
+    text-indent: 50px;
+    text-align: right;
+  }
+
+  .menuSections {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    height: 60px;
+    width: 1000px;
+    line-height: 60px;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .menuSections:hover {
+    color: black;
+  }
+
+.MenuItem {
+  color: white;
+  margin: auto;
+  text-align: center;
+}
